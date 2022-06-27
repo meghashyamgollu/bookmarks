@@ -1,3 +1,54 @@
 .badge{
     border-radius: 5px !important;
 }
+.container{
+    margin: 0 auto;
+}
+.container > div{
+    margin: 2em auto;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.8em;
+    font-family: Allura !important;
+}
+
+#form_section{
+    background-color: aqua;
+    border-radius: 0.5em;
+    padding: 0.8em;
+}
+
+
+thead{
+    background-color: aqua;
+    color: white;
+}
+
+.table-row:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table-row > td{
+    margin: auto;
+}
+
+/* .table-row th{
+    color: red;
+}  */
+
+.table-row span{
+    margin-right: 0.3em;
+    padding: auto;
+}
+
+.table-row span:first-child{
+    text-transform: capitalize;
+}
+

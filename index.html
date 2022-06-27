@@ -10,12 +10,15 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
   <body>
+    <header class="text-bg-primary">
+      <b> Bookmark manager </b>
+    </header>
     <div class="container row">
-      <div id="form_section" class="col-lg-6">
+      <div id="form_section" class="col-lg-4">
         <form>
           <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
@@ -36,6 +39,7 @@
               placeholder="Enter URL"
               required
             />
+            <div id="tagsHelp" class="form-text">(Example: facebook.com)</div>
           </div>
           <div class="mb-3">
             <label for="categoryInput" class="form-label">Category</label>
@@ -65,8 +69,19 @@
           </div>
         </form>
       </div>
-      <div id="output_section" class="col-lg-6">
-        <div class="list-group" id="listGroup"></div>
+      <div id="output_section" class="col-lg-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">URL</th>
+              <th scope="col">Category</th>
+              <th scope="col">Tags</th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+          </tbody>
+        </table>
       </div>
     </div>
     <script src="./index.js"></script>
